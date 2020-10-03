@@ -1,0 +1,10 @@
+#ifndef CONSTANTS_H
+#define CONSTANTS_H
+
+const unsigned int WINDOW_WIDTH = 800; // pixels
+const unsigned int WINDOW_HEIGHT = 600; // pixels
+
+const unsigned int FPS = 60;
+const unsigned int FRAME_TARGET_TIME = 1000 / FPS; // milliseconds
+
+#endif // !CONSTANTS_H
