@@ -2,7 +2,7 @@ build:
 	g++ -w -std=c++14 -Wfatal-errors \
 	./src/*.cpp \
 	./src/game/*.cpp \
-	-o game \
+	-o ./build/game \
 	-I"./lib/lua" \
 	-L"./lib/lua" \
 	-llua5.3 \
@@ -12,7 +12,7 @@ build:
 	-lSDL2_mixer;
 
 clean:
-	rm ./game;
+	[ -f ./build/game ] && rm ./build/game; # remove game file only if it exists
 
 run:
-	./game;
+	./build/game;
